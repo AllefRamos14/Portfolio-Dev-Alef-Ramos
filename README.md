@@ -14,7 +14,7 @@ Este portfólio apresenta meus principais projetos, habilidades técnicas e evol
 
 ## 📸 Preview
 
-![Preview do portfólio](./src/assets/projects/portfolio.webp)
+![Preview do portfólio](./src/assets/imagen-de-projetos/portfolio.webp)
 
 ---
 
@@ -84,9 +84,9 @@ src/
 
 ## 📫 Contato
 
-* GitHub: https://github.com/seu-usuario
-* LinkedIn: https://linkedin.com/in/seu-linkedin
-* Email: [seuemail@email.com](mailto:seuemail@email.com)
+* GitHub: [https://github.com/AllefRamos](https://github.com/AllefRamos14)
+* LinkedIn: www.linkedin.com/in/allef-ramos
+* Email: [aleframos160@gmail.com](aleframos160@gmail.com)
 
 ---
 
