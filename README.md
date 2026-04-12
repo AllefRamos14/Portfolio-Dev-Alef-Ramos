@@ -8,7 +8,8 @@ Este portfólio apresenta meus principais projetos, habilidades técnicas e evol
 
 ## 🚀 Deploy
 
-🔗 portfólio-dev-alef-ramos.vercel.app
+🔗 Acesse o projeto online:  
+👉 https://portfólio-dev-alef-ramos.vercel.app
 
 ---
 
