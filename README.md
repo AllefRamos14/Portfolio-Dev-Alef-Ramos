@@ -1,12 +1,105 @@
-# React + Vite
+# 💼 Portfólio - Allef Ramos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desenvolvedor Full Stack focado em criar aplicações modernas, rápidas e escaláveis utilizando React, Node.js e TypeScript.
 
-Currently, two official plugins are available:
+Este portfólio apresenta meus principais projetos, habilidades técnicas e evolução como desenvolvedor, com foco em performance, boas práticas e experiência do usuário.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Deploy
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 https://seu-site.vercel.app
+
+---
+
+## 📸 Preview
+
+![Preview do portfólio](./src/assets/projects/portfolio.webp)
+
+---
+
+## 🛠️ Tecnologias
+
+* React
+* Vite
+* Styled-components
+* JavaScript
+* TypeScript
+* HTML5 & CSS3
+
+---
+
+## ⚡ Performance
+
+Este projeto foi desenvolvido com foco em performance e otimização:
+
+* Imagens convertidas para WebP (alta compressão e qualidade)
+* Lazy loading para melhor carregamento
+* Build otimizado com Vite
+* Estrutura leve e eficiente
+
+---
+
+## 📦 Como rodar localmente
+
+```bash
+# clonar repositório
+git clone https://github.com/seu-usuario/portfolio.git
+
+# entrar na pasta
+cd portfolio
+
+# instalar dependências
+yarn
+
+# rodar projeto
+yarn dev
+```
+
+---
+
+## 📁 Estrutura do projeto
+
+```
+src/
+  assets/
+    profile/
+    projects/
+  components/
+  pages/
+  styles/
+```
+
+---
+
+## 📌 Funcionalidades
+
+* Apresentação profissional do desenvolvedor
+* Exibição de projetos com preview
+* Links para GitHub e Demo
+* Layout responsivo
+* Interface moderna e limpa
+
+---
+
+## 📫 Contato
+
+* GitHub: https://github.com/seu-usuario
+* LinkedIn: https://linkedin.com/in/seu-linkedin
+* Email: [seuemail@email.com](mailto:seuemail@email.com)
+
+---
+
+## 📌 Status
+
+🚀 Projeto finalizado e em constante evolução
+
+---
+
+## 🧠 Observações
+
+Este projeto faz parte da minha evolução como desenvolvedor Full Stack, aplicando conceitos modernos de desenvolvimento front-end e integração com back-end.
+
+---
+
+⭐ Se gostou do projeto, deixe uma estrela no repositório!
