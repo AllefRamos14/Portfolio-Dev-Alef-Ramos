@@ -108,9 +108,15 @@ src/
 
 ## 📫 Contato
 
-* GitHub: [https://github.com/AllefRamos](https://github.com/AllefRamos14)
-* LinkedIn: www.linkedin.com/in/allef-ramos
-* Email: [aleframos160@gmail.com](aleframos160@gmail.com)
+<div align="center">
+
+| Canal | Link |
+|---|---|
+| 💼 LinkedIn | [linkedin.com/in/allef-ramos](https://www.linkedin.com/in/allef-ramos) |
+| 🐙 GitHub | [github.com/AllefRamos14](https://github.com/AllefRamos14) |
+| 📧 E-mail | [aleframos160@gmail.com](mailto:aleframos160@gmail.com) |
+
+</div>
 
 ---
 
