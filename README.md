@@ -132,4 +132,4 @@ Este projeto faz parte da minha evolução como desenvolvedor Full Stack, aplica
 
 ---
 
-⭐ Se gostou do projeto, deixe uma estrela no repositório!
+Se este projeto te inspirou, deixe uma ⭐ — significa muito!
