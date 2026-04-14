@@ -15,7 +15,7 @@
 ## 📸 Preview
 
 <div align="center">
-  <img src="./src/assets/imagen-de-projetos/portfolio.webp" alt="Preview do Portfólio" width="800" />
+  <img src="./public/Tela-de-home.webp" alt="Preview do Portfólio" width="800" />
 </div>
 
 ---
