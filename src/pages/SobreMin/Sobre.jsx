@@ -65,7 +65,7 @@ export default function Sobre() {
             <a href="./Alef-Ramos.pdf" download="Alef-Ramos-CV.pdf">
               <Curriculo>
                 <FaDownload />
-                Baixar CV
+                Download Resume
               </Curriculo>
             </a>
 
