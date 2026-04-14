@@ -125,6 +125,7 @@ src/
 | 🐙 GitHub | [github.com/AllefRamos14](https://github.com/AllefRamos14) |
 | 📧 E-mail | [aleframos160@gmail.com](mailto:aleframos160@gmail.com) |
 
+https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000
 </div>
 
 ---
