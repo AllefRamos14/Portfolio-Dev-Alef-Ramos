@@ -29,7 +29,6 @@ O foco está em oferecer uma experiência de navegação fluida, com design limp
 
 ## 🛠️ Stack de Tecnologias
 
-<div align="center">
 
 ### 🎨 Front-end
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -51,7 +50,7 @@ O foco está em oferecer uma experiência de navegação fluida, com design limp
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-</div>
+
 
 ## ✨ Funcionalidades
 
