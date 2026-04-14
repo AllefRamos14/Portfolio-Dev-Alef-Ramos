@@ -1,43 +1,66 @@
-# 💼 Portfólio - Allef Ramos
+<div align="center">
 
-Desenvolvedor Full Stack focado em criar aplicações modernas, rápidas e escaláveis utilizando React, Node.js e TypeScript.
+# 💼 Portfólio — Allef Ramos
 
-Este portfólio apresenta meus principais projetos, habilidades técnicas e evolução como desenvolvedor, com foco em performance, boas práticas e experiência do usuário.
+**Desenvolvedor Full Stack** especializado em aplicações modernas, performáticas e escaláveis.
 
----
+[![Deploy](https://img.shields.io/badge/🔗_Acessar_Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-dev-alef-ramos.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/allef-ramos)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AllefRamos14)
 
-## 🚀 Deploy
-
-🔗 Acesse o projeto online:  
-👉 https://portfolio-dev-alef-ramos.vercel.app/
+</div>
 
 ---
 
 ## 📸 Preview
 
-![Preview do portfólio](./src/assets/imagen-de-projetos/portfolio.webp)
+<div align="center">
+  <img src="./src/assets/imagen-de-projetos/portfolio.webp" alt="Preview do Portfólio" width="800" />
+</div>
 
 ---
 
-## 🛠️ Tecnologias
+## 📖 Sobre o Projeto
 
-* React
-* Vite
-* Styled-components
-* JavaScript
-* TypeScript
-* HTML5 & CSS3
+Portfólio desenvolvido para apresentar minha trajetória, projetos e habilidades como desenvolvedor Full Stack.
+O foco está em oferecer uma experiência de navegação fluida, com design limpo, responsivo e carregamento otimizado.
 
 ---
 
-## ⚡ Performance
+## 🛠️ Stack de Tecnologias
 
-Este projeto foi desenvolvido com foco em performance e otimização:
+<div align="center">
 
-* Imagens convertidas para WebP (alta compressão e qualidade)
-* Lazy loading para melhor carregamento
-* Build otimizado com Vite
-* Estrutura leve e eficiente
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+</div>
+
+---
+
+## ✨ Funcionalidades
+
+- 🧑‍💻 Apresentação profissional com foco em experiência do usuário
+- 🗂️ Exibição de projetos com preview, descrição e links (GitHub + Demo)
+- 📱 Layout totalmente responsivo para todos os dispositivos
+- ⚡ Performance otimizada com lazy loading e imagens em WebP
+- 🎨 Interface moderna, clean e acessível
+
+---
+
+## ⚡ Performance & Otimizações
+
+| Otimização | Descrição |
+|---|---|
+| 🖼️ WebP | Imagens convertidas para alta compressão sem perda de qualidade |
+| 💤 Lazy Loading | Carregamento sob demanda para melhor performance inicial |
+| ⚙️ Vite Build | Bundle otimizado com tree-shaking e code splitting |
+| 🏗️ Estrutura leve | Componentes reutilizáveis e código limpo |
 
 ---
 
