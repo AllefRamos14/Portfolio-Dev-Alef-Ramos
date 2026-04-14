@@ -66,7 +66,7 @@ O foco está em oferecer uma experiência de navegação fluida, com design limp
 
 ```bash
 # clonar repositório
-git clone https://github.com/seu-usuario/portfolio.git
+git clone https://github.com/AllefRamos14/portfolio.git
 
 # entrar na pasta
 cd portfolio
