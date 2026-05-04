@@ -8,6 +8,7 @@ import reactIcon from "../assets/react.svg";
 
 import Barbearia from "../assets/imagen-de-projetos/Barbearia.webp";
 import DevMovies from "../assets/imagen-de-projetos/Devmovies.webp";
+import Personal from "../assets/imagen-de-projetos/Personal.webp";
 import Portfolio from "../assets/imagen-de-projetos/Portfolio.webp";
 import Dashboard from "../assets/imagen-de-projetos/Tela-Dashboard.webp";
 import loginImg from "../assets/imagen-de-projetos/Tela-De-Login.webp";
@@ -79,6 +80,15 @@ export const projetos = [
         linkGitHub: "https://github.com/AllefRamos14/Barbeiro-Front-End.git",
         linkDemo: "https://barbearia-washington.vercel.app/",
         imagem: Barbearia,
+    },
+     {
+        id: 8,
+        titulo: "💪 Personal Dany",
+        descricao: "O Personal Dany é uma Site desenvolvido para promover serviços de treinamento personalizado.",
+        skills: [reactIcon, html5, css3, jsIcon,],
+        linkGitHub: "https://github.com/AllefRamos14/Personal-Trainer-Dany-.git",
+        linkDemo: " https://personal-trainer-dany.vercel.app/",
+        imagem: Personal,
     },
 
 ];
