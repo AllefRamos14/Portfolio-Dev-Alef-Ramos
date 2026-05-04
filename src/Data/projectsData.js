@@ -1,17 +1,18 @@
-import html5 from "../assets/HTML5.svg";
-import jsIcon from "../assets/javascript-original.svg";
 import css3 from "../assets/CSS3.svg";
-import reactIcon from "../assets/react.svg";
+import html5 from "../assets/HTML5.svg";
 import nodeIcon from "../assets/Node.js.svg";
 import tsIcon from "../assets/TypeScript.svg";
 import tailwind from "../assets/icons8-tailwind-css-48.png";
+import jsIcon from "../assets/javascript-original.svg";
+import reactIcon from "../assets/react.svg";
 
+import Barbearia from "../assets/imagen-de-projetos/Barbearia.webp";
+import DevMovies from "../assets/imagen-de-projetos/Devmovies.webp";
+import Portfolio from "../assets/imagen-de-projetos/Portfolio.webp";
+import Dashboard from "../assets/imagen-de-projetos/Tela-Dashboard.webp";
 import loginImg from "../assets/imagen-de-projetos/Tela-De-Login.webp";
 import devBurguerImg from "../assets/imagen-de-projetos/Tela-DevBurguer.webp";
 import devBillsImg from "../assets/imagen-de-projetos/dashboard.webp";
-import DevMovies from "../assets/imagen-de-projetos/Devmovies.webp";
-import Dashboard from "../assets/imagen-de-projetos/Tela-Dashboard.webp";
-import Portfolio from "../assets/imagen-de-projetos/Portfolio.webp";
 
 export const projetos = [
     {
@@ -69,6 +70,15 @@ export const projetos = [
         linkGitHub: "https://github.com/AllefRamos14/Portfolio-Dev.git",
         linkDemo: "https://portfolio-dev-one-beta.vercel.app/",
         imagem: Portfolio,
+    },
+    {
+        id: 7,
+        titulo: "💈 THE BLADE & COMB",
+        descricao: "The Blade & Comb é uma aplicação web moderna para agendamento e gestão de serviços de barbearia",
+        skills: [reactIcon, html5, css3, jsIcon,nodeIcon],
+        linkGitHub: "https://github.com/AllefRamos14/Barbeiro-Front-End.git",
+        linkDemo: "https://barbearia-washington.vercel.app/",
+        imagem: Barbearia,
     },
 
 ];
