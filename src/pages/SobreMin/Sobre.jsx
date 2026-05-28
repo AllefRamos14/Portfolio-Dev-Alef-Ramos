@@ -1,27 +1,27 @@
 import {
-  Container,
-  ContainerTitle,
   CaixaTexto,
-  Skills,
+  Container,
   ContainerMestre,
+  ContainerTitle,
+  Curriculo,
   FotoPerfil,
-  Curriculo
+  Skills
 } from './style.js';
 
 import { FaDownload } from "react-icons/fa";
 
-import Menu from '../../components/menu/index.jsx';
 import Footer from "../../components/Footer";
+import Menu from '../../components/menu/index.jsx';
 
-import iconeReact from '../../assets/react-original.svg';
-import iconeJS from '../../assets/javascript-original.svg';
+import FotoAllef from '../../assets/Allef.webp';
 import iconeCSS from '../../assets/CSS3.svg';
 import iconeHTML from '../../assets/HTML5.svg';
 import iconeNODE from '../../assets/Node.js.svg';
-import FotoAllef from '../../assets/Allef.webp';
 import iconeTailwind from '../../assets/Tailwind CSS.svg';
 import iconeTypeScript from '../../assets/TypeScript.svg';
 import iconeDocker from '../../assets/icons8-docker-48.png';
+import iconeJS from '../../assets/javascript-original.svg';
+import iconeReact from '../../assets/react-original.svg';
 
 
 export default function Sobre() {
@@ -62,7 +62,7 @@ export default function Sobre() {
               <img src={iconeDocker} alt="Docker" />
             </Skills>
 
-            <a href="./Alef-Ramos.pdf" download="Alef-Ramos-CV.pdf">
+            <a href="./Curriculo_Alef_Ramos.pdf" download="Curriculo_Alef_Ramos.pdf">
               <Curriculo>
                 <FaDownload />
                 Download Resume
