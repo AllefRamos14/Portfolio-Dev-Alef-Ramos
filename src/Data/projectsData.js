@@ -28,7 +28,7 @@ export const projetos = [
         imagem: Chatbot,
     },
     {
-        id: 1,
+        id: 2,
         titulo: "🎬 DevMovies",
         descricao: "DevMovies é uma aplicação web inspirada em plataformas de streaming, onde é possível explorar filmes, visualizar detalhes, navegar entre conteúdos e ter uma experiência moderna e responsiva.",
         skills: [reactIcon, jsIcon],
@@ -37,7 +37,7 @@ export const projetos = [
         imagem: DevMovies,
     },
     {
-        id: 2,
+        id: 3,
         titulo: "💸 DevBills ",
         descricao: "💸 DevBills é uma aplicação de controle financeiro pessoal com autenticação, dashboard financeiro, cadastro de receitas e despesas e integração com API REST.",
         skills: [reactIcon, tsIcon, nodeIcon, tailwind],
@@ -46,7 +46,7 @@ export const projetos = [
         imagem: devBillsImg,
     },
     {
-        id: 3,
+        id: 4,
         titulo: "🍔 Projeto DevBurguer",
         descricao: "DevBurguer – Cardápio Online Permite navegar por categorias (entradas, hambúrgueres, bebidas e sobremesas), visualizar produtos com imagens e adicionar itens ao carrinho de forma simples e interativa.",
         skills: [reactIcon, jsIcon, nodeIcon],
@@ -56,7 +56,7 @@ export const projetos = [
     },
 
     {
-        id: 4,
+        id: 5,
         titulo: "📊 Dashboard",
         descricao: "Painel administrativo desenvolvido com React e Vite, focado em componentização, responsividade e organização de layout.",
         skills: [reactIcon, html5, css3, jsIcon],
@@ -65,7 +65,7 @@ export const projetos = [
         imagem: Dashboard,
     },
     {
-        id: 5,
+        id: 6,
         titulo: "🔑 Login Page Responsiva",
         descricao: "O projeto se destaca pela transição animada entre os formulários, criando uma interação dinâmica e intuitiva, além de garantir responsividade e adaptação para diferentes dispositivos.",
         skills: [html5, css3, jsIcon],
@@ -75,7 +75,7 @@ export const projetos = [
     },
 
     {
-        id: 6,
+        id: 7,
         titulo: "🚀 Portfolio Dev",
         descricao: "A proposta deste projeto é servir como base para desenvolvedores que querem criar um portfólio moderno, responsivo e fácil de personalizar.",
         skills: [reactIcon, html5, css3, jsIcon],
@@ -84,7 +84,7 @@ export const projetos = [
         imagem: Portfolio,
     },
     {
-        id: 7,
+        id: 8,
         titulo: "💈 THE BLADE & COMB",
         descricao: "The Blade & Comb é uma aplicação web moderna para agendamento e gestão de serviços de barbearia",
         skills: [reactIcon, html5, css3, jsIcon,nodeIcon],
@@ -93,7 +93,7 @@ export const projetos = [
         imagem: Barbearia,
     },
      {
-        id: 8,
+        id: 9,
         titulo: "💪 Personal Dany",
         descricao: "O Personal Dany é uma Site desenvolvido para promover serviços de treinamento personalizado.",
         skills: [reactIcon, html5, css3, jsIcon,],
