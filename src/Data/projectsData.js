@@ -20,7 +20,7 @@ export const projetos = [
 
      {
         id: 1,
-        titulo: "AI Chatbot with React + OpenRouter",
+        titulo: "🤖 AI Chatbot with React + OpenRouter",
         descricao: "Chatbot inteligente desenvolvido com React + IA, focado em experiência moderna, performance e auxílio para desenvolvedores.",
         skills: [reactIcon, jsIcon,nodeIcon,],
         linkGitHub: "https://github.com/AllefRamos14/AI-Chatbot.git",
