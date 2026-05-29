@@ -14,8 +14,19 @@ import Dashboard from "../assets/imagen-de-projetos/Tela-Dashboard.webp";
 import loginImg from "../assets/imagen-de-projetos/Tela-De-Login.webp";
 import devBurguerImg from "../assets/imagen-de-projetos/Tela-DevBurguer.webp";
 import devBillsImg from "../assets/imagen-de-projetos/dashboard.webp";
+import Chatbot from "../assets/imagen-de-projetos/preview-tela-de-home.webp";
 
 export const projetos = [
+
+     {
+        id: 1,
+        titulo: "AI Chatbot with React + OpenRouter",
+        descricao: "Chatbot inteligente desenvolvido com React + IA, focado em experiência moderna, performance e auxílio para desenvolvedores.",
+        skills: [reactIcon, jsIcon,nodeIcon,],
+        linkGitHub: "https://github.com/AllefRamos14/AI-Chatbot.git",
+        linkDemo: "https://ai-chatbot-five-beige.vercel.app/",
+        imagem: Chatbot,
+    },
     {
         id: 1,
         titulo: "🎬 DevMovies",
