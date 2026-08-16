@@ -1,18 +1,51 @@
-import {
-    ContainerMestre,
-    ContainerTitle,
-    CaixaTexto,
-    Skills,
-    ButtonsDeRedes,
-} from "./style";
+import { useEffect, useRef, useState } from "react";
+import Footer from "../../components/Footer";
 import Menu from "../../components/menu";
 import { projetos } from "../../Data/projectsData";
-import Footer from "../../components/Footer";
+import {
+    ButtonsDeRedes,
+    CaixaTexto,
+    ContainerMestre,
+    ContainerTitle,
+    GlobalStyleBorda,
+    Skills,
+} from "./style";
 
+// Hook: revela o elemento só quando ele entra na viewport
+function useRevelarAoRolar(threshold = 0.15) {
+    const ref = useRef(null);
+    const [visivel, setVisivel] = useState(false);
+
+    useEffect(() => {
+        const el = ref.current;
+        if (!el) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setVisivel(true);
+                    observer.unobserve(el);
+                }
+            },
+            { threshold }
+        );
+
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, [threshold]);
+
+    return [ref, visivel];
+}
 
 function CardProjeto({ proj, $delay }) {
+    const [ref, visivel] = useRevelarAoRolar();
+
     return (
-        <CaixaTexto $delay={$delay}>
+        <CaixaTexto
+            ref={ref}
+            $delay={$delay}
+            className={visivel ? "visivel" : ""}
+        >
             <div className="titulo">
                 <h2>{proj.titulo}</h2>
             </div>
@@ -22,7 +55,6 @@ function CardProjeto({ proj, $delay }) {
             </div>
 
             <div className="main">
-
                 <div className="tecnologias">
                     <h3>Tecnologias:</h3>
                     <Skills>
@@ -64,15 +96,14 @@ function CardProjeto({ proj, $delay }) {
 }
 
 export default function Projetos() {
-
-
     return (
         <ContainerMestre>
+            <GlobalStyleBorda />
             <Menu />
 
             <ContainerTitle id="projetos">
                 {projetos.map((proj, i) => (
-                    <CardProjeto key={proj.id} proj={proj} $delay={`${i * 0.2}s`} />
+                    <CardProjeto key={proj.id} proj={proj} $delay={`${i * 0.15}s`} />
                 ))}
             </ContainerTitle>
 

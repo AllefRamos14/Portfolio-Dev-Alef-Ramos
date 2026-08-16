@@ -7,6 +7,7 @@ import jsIcon from "../assets/javascript-original.svg";
 import reactIcon from "../assets/react.svg";
 
 import Barbearia from "../assets/imagen-de-projetos/Barbearia.webp";
+import DevClub from "../assets/imagen-de-projetos/Devclub.png";
 import DevMovies from "../assets/imagen-de-projetos/Devmovies.webp";
 import Personal from "../assets/imagen-de-projetos/Personal.webp";
 import Portfolio from "../assets/imagen-de-projetos/Portfolio.webp";
@@ -18,8 +19,18 @@ import Chatbot from "../assets/imagen-de-projetos/preview-tela-de-home.webp";
 
 export const projetos = [
 
+
      {
         id: 1,
+        titulo: "🚀 DevClub Landing",
+        descricao: "Landing page moderna desenvolvida para o desafio Full Stack do DevClub, utilizando React, TypeScript, Styled Components e Framer Motion, com foco em responsividade, animações e arquitetura escalável.",
+        skills: [reactIcon, tsIcon],
+        linkGitHub: "https://github.com/AllefRamos14/devclub-landing.git",
+        linkDemo: "https://devclub-landing-bay.vercel.app/",
+        imagem: DevClub,
+    },
+     {
+        id: 2,
         titulo: "🤖 AI Chatbot with React + OpenRouter",
         descricao: "Chatbot inteligente desenvolvido com React + IA, focado em experiência moderna, performance e auxílio para desenvolvedores.",
         skills: [reactIcon, jsIcon,nodeIcon,],
@@ -27,15 +38,7 @@ export const projetos = [
         linkDemo: "https://ai-chatbot-five-beige.vercel.app/",
         imagem: Chatbot,
     },
-    {
-        id: 2,
-        titulo: "🎬 DevMovies",
-        descricao: "DevMovies é uma aplicação web inspirada em plataformas de streaming, onde é possível explorar filmes, visualizar detalhes, navegar entre conteúdos e ter uma experiência moderna e responsiva.",
-        skills: [reactIcon, jsIcon],
-        linkGitHub: "https://github.com/AllefRamos14/DevMovies",
-        linkDemo: "https://dev-movies-lovat.vercel.app",
-        imagem: DevMovies,
-    },
+   
     {
         id: 3,
         titulo: "💸 DevBills ",
@@ -47,6 +50,24 @@ export const projetos = [
     },
     {
         id: 4,
+        titulo: "💈 THE BLADE & COMB",
+        descricao: "The Blade & Comb é uma aplicação web moderna para agendamento e gestão de serviços de barbearia",
+        skills: [reactIcon, html5, css3, jsIcon,nodeIcon],
+        linkGitHub: "https://github.com/AllefRamos14/Barbeiro-Front-End.git",
+        linkDemo: "https://barbearia-washington.vercel.app/",
+        imagem: Barbearia,
+    },
+    {
+        id: 5,
+        titulo: "🎬 DevMovies",
+        descricao: "DevMovies é uma aplicação web inspirada em plataformas de streaming, onde é possível explorar filmes, visualizar detalhes, navegar entre conteúdos e ter uma experiência moderna e responsiva.",
+        skills: [reactIcon, jsIcon],
+        linkGitHub: "https://github.com/AllefRamos14/DevMovies",
+        linkDemo: "https://dev-movies-lovat.vercel.app",
+        imagem: DevMovies,
+    },
+    {
+        id: 6,
         titulo: "🍔 Projeto DevBurguer",
         descricao: "DevBurguer – Cardápio Online Permite navegar por categorias (entradas, hambúrgueres, bebidas e sobremesas), visualizar produtos com imagens e adicionar itens ao carrinho de forma simples e interativa.",
         skills: [reactIcon, jsIcon, nodeIcon],
@@ -54,9 +75,18 @@ export const projetos = [
         linkDemo: "https://dev-burger-interface-five.vercel.app/Login",
         imagem: devBurguerImg,
     },
+     {
+        id: 7,
+        titulo: "💪 Personal Dany",
+        descricao: "O Personal Dany é uma Site desenvolvido para promover serviços de treinamento personalizado.",
+        skills: [reactIcon, html5, css3, jsIcon,],
+        linkGitHub: "https://github.com/AllefRamos14/Personal-Trainer-Dany-.git",
+        linkDemo: " https://personal-trainer-dany.vercel.app/",
+        imagem: Personal,
+    },
 
     {
-        id: 5,
+        id: 8,
         titulo: "📊 Dashboard",
         descricao: "Painel administrativo desenvolvido com React e Vite, focado em componentização, responsividade e organização de layout.",
         skills: [reactIcon, html5, css3, jsIcon],
@@ -65,7 +95,7 @@ export const projetos = [
         imagem: Dashboard,
     },
     {
-        id: 6,
+        id: 9,
         titulo: "🔑 Login Page Responsiva",
         descricao: "O projeto se destaca pela transição animada entre os formulários, criando uma interação dinâmica e intuitiva, além de garantir responsividade e adaptação para diferentes dispositivos.",
         skills: [html5, css3, jsIcon],
@@ -75,7 +105,7 @@ export const projetos = [
     },
 
     {
-        id: 7,
+        id: 10,
         titulo: "🚀 Portfolio Dev",
         descricao: "A proposta deste projeto é servir como base para desenvolvedores que querem criar um portfólio moderno, responsivo e fácil de personalizar.",
         skills: [reactIcon, html5, css3, jsIcon],
@@ -83,23 +113,6 @@ export const projetos = [
         linkDemo: "https://portfolio-dev-one-beta.vercel.app/",
         imagem: Portfolio,
     },
-    {
-        id: 8,
-        titulo: "💈 THE BLADE & COMB",
-        descricao: "The Blade & Comb é uma aplicação web moderna para agendamento e gestão de serviços de barbearia",
-        skills: [reactIcon, html5, css3, jsIcon,nodeIcon],
-        linkGitHub: "https://github.com/AllefRamos14/Barbeiro-Front-End.git",
-        linkDemo: "https://barbearia-washington.vercel.app/",
-        imagem: Barbearia,
-    },
-     {
-        id: 9,
-        titulo: "💪 Personal Dany",
-        descricao: "O Personal Dany é uma Site desenvolvido para promover serviços de treinamento personalizado.",
-        skills: [reactIcon, html5, css3, jsIcon,],
-        linkGitHub: "https://github.com/AllefRamos14/Personal-Trainer-Dany-.git",
-        linkDemo: " https://personal-trainer-dany.vercel.app/",
-        imagem: Personal,
-    },
+    
 
 ];

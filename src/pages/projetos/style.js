@@ -1,19 +1,21 @@
-import styled, { keyframes } from "styled-components";
+import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 const corPrimaria = "#ff3c3c";
 const corFundo = "#0c0c0c";
 const corTexto = "#fff";
 const corTextoSecundaria = "#aaa";
 
-const fadeInUp = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+// @property precisa ser global (não pode ficar dentro de um seletor aninhado)
+export const GlobalStyleBorda = createGlobalStyle`
+  @property --angulo {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+`;
+
+const girarBorda = keyframes`
+  to { --angulo: 360deg; }
 `;
 
 export const ContainerMestre = styled.div`
@@ -63,9 +65,16 @@ export const Container = styled.div`
   .menu a:hover {
     color: ${corPrimaria};
   }
+
+  .menu a:focus-visible {
+    outline: 2px solid ${corPrimaria};
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
 `;
 
 export const ContainerTitle = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -76,31 +85,84 @@ export const ContainerTitle = styled.div`
   gap: 40px;
   box-shadow: 0 0 10px rgba(255, 60, 60, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    background:
+      radial-gradient(circle at 25% 20%, rgba(255, 60, 60, 0.18), transparent 55%),
+      radial-gradient(circle at 80% 75%, rgba(255, 60, 60, 0.10), transparent 50%);
+    filter: blur(50px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
   }
 `;
 
-// ✅ CaixaTexto atualizado com transient prop $delay
 export const CaixaTexto = styled.div`
+  position: relative;
+  isolation: isolate;
   max-width: 400px;
   background: #222;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(255, 60, 60, 0.3);
 
-  animation: ${fadeInUp} 1.2s ease forwards;
   opacity: 0;
-  animation-delay: ${({ $delay }) => $delay || "0s"};
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease,
+              box-shadow 0.3s ease, transform 0.3s ease;
 
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  &.visivel {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: ${({ $delay }) => $delay || "0s"};
+  }
+
   cursor: default;
 
   &:hover {
     box-shadow: 0 10px 20px rgba(255, 60, 60, 0.5);
     transform: translateY(-5px);
     cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: conic-gradient(
+      from var(--angulo, 0deg),
+      transparent,
+      ${corPrimaria},
+      transparent 30%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    animation: ${girarBorda} 3s linear infinite;
+    animation-play-state: paused;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    animation-play-state: running;
   }
 
   h2 {
@@ -173,7 +235,7 @@ export const CaixaTexto = styled.div`
   }
 
   .main {
-    margin-left: 32px;
+    margin-left: clamp(0px, 4vw, 32px);
   }
 
   .botoes {
@@ -188,6 +250,11 @@ export const CaixaTexto = styled.div`
       text-decoration: none;
       transition: transform 0.3s, background 0.3s;
       cursor: pointer;
+
+      &:focus-visible {
+        outline: 2px solid ${corTexto};
+        outline-offset: 3px;
+      }
 
       &.github {
         background: #333;
@@ -242,6 +309,11 @@ export const ButtonsDeRedes = styled.div`
     transition: transform 0.3s, background 0.3s;
     margin-right: 10px;
     cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid ${corTexto};
+      outline-offset: 3px;
+    }
   }
 
   .linkedin {
@@ -260,4 +332,3 @@ export const ButtonsDeRedes = styled.div`
     transform: scale(1.05);
   }
 `;
-

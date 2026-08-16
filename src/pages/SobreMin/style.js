@@ -11,9 +11,6 @@ const cores = {
   fundoBaixo: "#000",
 };
 
-
-
-
 const fadeInUp = keyframes`
   from {
     opacity: 0;
@@ -36,7 +33,7 @@ const fadeInRight = keyframes`
   }
 `;
 
-const fadeIn = keyframes`   //
+const fadeIn = keyframes`
   from { opacity: 0; }
   to { opacity: 1; }
 `;
@@ -77,10 +74,16 @@ export const Container = styled.div`
     color: #fff;
     font-weight: 500;
     transition: color 0.3s ease;
-  } 
+  }
 
   .menu a:hover {
     color: #ff3c3c;
+  }
+
+  .menu a:focus-visible {
+    outline: 2px solid #ff3c3c;
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 `;
 
@@ -106,17 +109,22 @@ export const ContainerTitle = styled.div`
 export const CaixaTexto = styled.div`
   max-width: 600px;
   margin-right: 40px;
-  opacity: 0;   
-  animation: ${fadeInUp} 0.8s ease forwards;  
+  opacity: 0;
+  animation: ${fadeInUp} 0.8s ease forwards;
 
-
+  /* efeito de digitação: largura e passos calculados no componente,
+     via props, para acompanhar o tamanho real do texto */
   h2 {
     font-size: 2.3rem;
     color: #fff;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #ff3c3c;
-    animation: typing 3s steps(20, end) forwards;
+    width: 0;
+    max-width: ${({ $chars }) => $chars || 20}ch;
+    animation: digitar 1.8s steps(${({ $chars }) => $chars || 20}, end) forwards,
+               piscarCursor 0.75s step-end infinite;
+    animation-delay: 0.2s, 2s;
     margin-bottom: 14px;
   }
 
@@ -132,58 +140,90 @@ export const CaixaTexto = styled.div`
     font-size: 16px;
     color: #fff;
     margin-bottom: 16px;
-
-  
+    opacity: 0;
+    animation: ${fadeInUp} 0.7s ease forwards;
   }
 
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-      border-right-color: transparent; 
-    }
+  p:nth-of-type(1) { animation-delay: 1.9s; }
+  p:nth-of-type(2) { animation-delay: 2.1s; }
+  p:nth-of-type(3) { animation-delay: 2.3s; }
+
+  @keyframes digitar {
+    from { width: 0; }
+    to { width: ${({ $chars }) => $chars || 20}ch; }
+  }
+
+  @keyframes piscarCursor {
+    50% { border-right-color: transparent; }
   }
 
   @media (max-width: 768px) {
     margin-right: 0;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    h2 {
+      animation: none;
+      width: ${({ $chars }) => $chars || 20}ch;
+      border-right-color: transparent;
+    }
+
+    p {
+      animation: none;
+      opacity: 1;
+    }
+  }
 `;
 
 export const Skills = styled.div`
-
- margin: 20px 0;
+  margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 
-
-     img {
+  img {
     width: 38px;
     padding: 6px;
     background: #111;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
-    animation: ${fadeIn} 1.2s ease forwards;
+    opacity: 0;
+    animation: ${fadeIn} 0.6s ease forwards;
   }
 
-  img:hover {
+  img:hover,
+  img:focus-visible {
     transform: scale(1.15);
     box-shadow: 0 0 10px ${cores.destaque}55;
   }
 
-  
+  img:focus-visible {
+    outline: 2px solid ${cores.destaque};
+    outline-offset: 3px;
+  }
+
+  img:nth-child(1) { animation-delay: 2.5s; }
+  img:nth-child(2) { animation-delay: 2.58s; }
+  img:nth-child(3) { animation-delay: 2.66s; }
+  img:nth-child(4) { animation-delay: 2.74s; }
+  img:nth-child(5) { animation-delay: 2.82s; }
+  img:nth-child(6) { animation-delay: 2.9s; }
+  img:nth-child(7) { animation-delay: 2.98s; }
+  img:nth-child(8) { animation-delay: 3.06s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    img {
+      animation: none;
+      opacity: 1;
+    }
+  }
 `;
 
 export const FotoPerfil = styled.div`
-
- opacity: 0;
+  opacity: 0;
   animation: ${fadeInRight} 0.8s ease forwards;
   animation-delay: 0.3s;
-
-
 
   img {
     width: 250px;
@@ -201,8 +241,9 @@ export const FotoPerfil = styled.div`
   }
 `;
 
-
-export const Curriculo = styled.button`
+/* Curriculo agora é um <a> estilizado como botão — evita aninhar
+   <button> dentro de <a> (inválido em HTML e ruim para leitor de tela) */
+export const Curriculo = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -216,6 +257,7 @@ export const Curriculo = styled.button`
   border: none;
   border-radius: 12px;
   cursor: pointer;
+  text-decoration: none;
 
   box-shadow: 0 8px 20px rgba(255, 60, 60, 0.22);
   transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;

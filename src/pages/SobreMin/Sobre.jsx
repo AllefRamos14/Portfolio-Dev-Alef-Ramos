@@ -23,6 +23,7 @@ import iconeDocker from '../../assets/icons8-docker-48.png';
 import iconeJS from '../../assets/javascript-original.svg';
 import iconeReact from '../../assets/react-original.svg';
 
+const TITULO = "Sobre Mim";
 
 export default function Sobre() {
   return (
@@ -31,7 +32,7 @@ export default function Sobre() {
         <Menu />
 
         <ContainerTitle>
-          <CaixaTexto>
+          <CaixaTexto $chars={TITULO.length}>
             <h2>
               Sobre <span>Mim</span>
             </h2>
@@ -50,24 +51,21 @@ export default function Sobre() {
               Busco oportunidades para colaborar com equipes engajadas, aprender continuamente e contribuir para soluções que gerem impacto real.
             </p>
 
-
             <Skills>
-              <img src={iconeHTML} alt="HTML5" />
-              <img src={iconeCSS} alt="CSS3" />
-              <img src={iconeJS} alt="JavaScript" />
-              <img src={iconeReact} alt="React" />
-              <img src={iconeNODE} alt="Node.js" />
-              <img src={iconeTailwind} alt="Tailwind" />
-              <img src={iconeTypeScript} alt="TypeScript.js" />
-              <img src={iconeDocker} alt="Docker" />
+              <img src={iconeHTML} alt="HTML5" tabIndex={0} />
+              <img src={iconeCSS} alt="CSS3" tabIndex={0} />
+              <img src={iconeJS} alt="JavaScript" tabIndex={0} />
+              <img src={iconeReact} alt="React" tabIndex={0} />
+              <img src={iconeNODE} alt="Node.js" tabIndex={0} />
+              <img src={iconeTailwind} alt="Tailwind" tabIndex={0} />
+              <img src={iconeTypeScript} alt="TypeScript.js" tabIndex={0} />
+              <img src={iconeDocker} alt="Docker" tabIndex={0} />
             </Skills>
 
-            <a href="./Curriculo_Alef_Ramos.pdf" download="Curriculo_Alef_Ramos.pdf">
-              <Curriculo>
-                <FaDownload />
-                Download Resume
-              </Curriculo>
-            </a>
+            <Curriculo href="./Curriculo_Alef_Ramos.pdf" download="Curriculo_Alef_Ramos.pdf">
+              <FaDownload />
+              Download Resume
+            </Curriculo>
 
           </CaixaTexto>
 
