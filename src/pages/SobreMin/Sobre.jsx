@@ -62,7 +62,7 @@ export default function Sobre() {
               <img src={iconeDocker} alt="Docker" tabIndex={0} />
             </Skills>
 
-            <Curriculo href="./Curriculo_Alef_Ramos.pdf" download="Curriculo_Alef_Ramos.pdf">
+            <Curriculo href="./Curriculo_Alef_Ramos..pdf" download="Curriculo_Alef_Ramos..pdf">
               <FaDownload />
               Download Resume
             </Curriculo>
